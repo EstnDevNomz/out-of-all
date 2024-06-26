@@ -1,0 +1,16 @@
+# 플랫폼을 명시합니다.
+platform :ios, '12.0'
+
+target 'Runner' do
+  use_frameworks!
+
+  # 필요한 종속성을 추가합니다.
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+
+  target 'RunnerTests' do
+    inherit! :search_paths
+    # 테스트용 종속성을 추가합니다.
+  end
+end
